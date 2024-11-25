@@ -9,7 +9,7 @@ import SettingsScreen from './src/screens/SettingsScreen';
 
 // Create a stack navigator
 const Stack = createStackNavigator();
-
+// main function
 export default function App() {
   return (
     <NavigationContainer>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-
+// signup screen
 const SignUpScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>

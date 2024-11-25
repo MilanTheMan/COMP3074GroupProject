@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-
+// login screen
 const LoginScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>

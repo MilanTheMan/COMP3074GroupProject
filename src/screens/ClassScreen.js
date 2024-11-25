@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import BottomTaskBar from '../components/BottomTaskBar'; // Ensure this path is correct
-
+// class screen
 const ClassScreen = ({ route, navigation }) => {
   const { className } = route.params;
 

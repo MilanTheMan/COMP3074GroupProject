@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity, TextInput } from 'react-native';
-
+// home screen
 const HomeScreen = ({ navigation }) => {
   const classes = [
     { id: '1', name: 'C23 Math Class', students: 53, image: require('../../assets/math.png') },
