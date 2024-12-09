@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const SettingsScreen = () => {
-  const [name, setName] = useState("Fahad Al-Hadeethi");
-  const [email, setEmail] = useState("Fahad@mail.com");
+  const [name, setName] = useState("John Doe");
+  const [email, setEmail] = useState("john@mail.com");
   const [password, setPassword] = useState("********");
+
+  const navigation = useNavigation(); // Hook to access navigation
 
   return (
     <View style={styles.container}>
@@ -50,6 +53,14 @@ const SettingsScreen = () => {
       <TouchableOpacity style={styles.saveButton} onPress={() => alert('Settings Saved')}>
         <Text style={styles.saveButtonText}>Save</Text>
       </TouchableOpacity>
+
+      {/* Logout Button */}
+      <TouchableOpacity
+        style={styles.logoutButton}
+        onPress={() => navigation.navigate('Login')} // Navigate to Login screen
+      >
+        <Text style={styles.logoutButtonText}>Logout</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -90,6 +101,16 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   saveButtonText: { color: '#fff', fontSize: 18, fontWeight: 'bold' },
+
+  // Logout Button
+  logoutButton: {
+    backgroundColor: '#FF3B30',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  logoutButtonText: { color: '#fff', fontSize: 18, fontWeight: 'bold' },
 });
 
 export default SettingsScreen;
