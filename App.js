@@ -8,6 +8,7 @@ import ClassScreen from './src/screens/ClassScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
 import GradesScreen from './src/screens/GradesScreen';
 import FriendsScreen from './src/screens/FriendsScreen';
+import TaskScreen from './src/screens/TaskScreen';
 
 // Create a stack navigator
 const Stack = createStackNavigator();
@@ -39,6 +40,7 @@ export default function App() {
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="Marks" component={GradesScreen} />
         <Stack.Screen name="Friends" component={FriendsScreen} />
+        <Stack.Screen name="Tasks" component={TaskScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
